@@ -1,0 +1,8 @@
+services:
+  dev_sftp_server:
+    image: atmoz/sftp
+    volumes:
+      - ./storage:/home/test/upload
+    command: test:test123:1001
+    ports:
+      - 2222:22
